@@ -1,5 +1,5 @@
 ---
 title: "Projects"
-date: 2025-06-07T00:00:00Z
+date: 2024-01-01
+layout: "projects"
 ---
-Here are some of my featured and past projects—click any card to learn more.
