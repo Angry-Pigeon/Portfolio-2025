@@ -1,4 +1,7 @@
 ---
-title: Hello and welcome!
+title: About Me
 ---
-This is a test message
+
+I'm Utku, a developer who loves experimenting with new technologies. This
+portfolio highlights some of the projects I've been working on. Thanks for
+stopping by!
