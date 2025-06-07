@@ -2,7 +2,7 @@
 baseURL = "https://example.org/"
 languageCode = "en-us"
 title = "Hello World"
-theme = "Hugo Profile"
+theme = "PolyRhythmic"
 
 # — new settings —
 
