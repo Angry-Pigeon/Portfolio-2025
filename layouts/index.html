@@ -8,8 +8,8 @@
       {{ range $featured }}
         <li class="project-card">
           <a href="{{ .RelPermalink }}">
-            <img src="{{ .Params.image }}" alt="{{ .Title }} thumbnail">
             <h2>{{ .Title }}</h2>
+            <img src="{{ .Params.image }}" alt="{{ .Title }} thumbnail">
             <p>{{ .Params.description }}</p>
           </a>
         </li>
@@ -23,8 +23,8 @@
         {{ range $others }}
           <li class="project-card">
             <a href="{{ .RelPermalink }}">
-              <img src="{{ .Params.image }}" alt="{{ .Title }} thumbnail">
               <h2>{{ .Title }}</h2>
+              <img src="{{ .Params.image }}" alt="{{ .Title }} thumbnail">
               <p>{{ .Params.description }}</p>
             </a>
           </li>
