@@ -1,4 +1,5 @@
 <!-- layouts/partials/footer.html -->
+{{ if ne .RelPermalink "/about/" }}
 <section id="contact" class="site-contact">
   <h2>{{ with (site.GetPage "contact").Title }}{{ . }}{{ end }}</h2>
   {{ with (site.GetPage "contact").Content }}
@@ -23,3 +24,4 @@
   </form>
   <div id="contact-form-status"></div>
 </section>
+{{ end }}
