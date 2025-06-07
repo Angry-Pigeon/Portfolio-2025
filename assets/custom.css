@@ -1,9 +1,0 @@
-/* assets/css/custom.css */
-
-/* Limit project thumbnail size */
-.project-card img {
-  max-width: 300px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}

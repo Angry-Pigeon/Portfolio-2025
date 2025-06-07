@@ -28,3 +28,7 @@ theme = "hello-friend-ng"
     weight     = 30
 
 
+
+[params]
+  customCSS = ["css/custom.css"]
+
