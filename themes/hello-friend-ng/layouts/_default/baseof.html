@@ -2,7 +2,21 @@
 <html lang="{{ .Site.Language }}">
     <head>
         {{ partial "head.html" . }}
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user && window.location.hash.includes("invite_token")) {
+        // Auto-open the signup widget if an invite is present
+        window.netlifyIdentity.open("signup");
+      }
+    });
+    window.netlifyIdentity.init();
+  }
+</script>
+
     </head>
+
 
     {{ block "body" . }}
         <body>
