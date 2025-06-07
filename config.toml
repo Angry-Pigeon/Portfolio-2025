@@ -4,6 +4,28 @@ languageCode = "en-us"
 title = "Hello World"
 theme = "hello-friend-ng"
 
+[permalinks]
+  projects = "/projects/:slug/"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about/"
+    weight     = 10
+
+  [[menu.main]]
+    identifier = "projects"
+    name       = "Projects"
+    url        = "/"
+    weight     = 20
+
+  [[menu.main]]
+    identifier = "contact"
+    name       = "Contact"
+    url        = "/#contact"
+    weight     = 30
+
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
