@@ -1,4 +1,5 @@
 # — your existing settings —
+buildFuture = true
 baseURL = "https://example.org/"
 languageCode = "en-us"
 title = "Hello World"
