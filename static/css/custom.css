@@ -1,0 +1,9 @@
+/* static/css/custom.css */
+
+/* Target your project‐list thumbnails */
+.project-list .project-card img {
+  max-width: 300px !important;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

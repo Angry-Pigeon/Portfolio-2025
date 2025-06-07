@@ -1,0 +1,7 @@
+<!-- layouts/partials/head.html -->
+  …
+  {{ $styles := resources.Get "css/main.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}">
+  <!-- your override -->
+  <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+</head>
