@@ -30,10 +30,7 @@ async function handleFormspreeSubmit(event) {
 function contactAlert(type, message) {
   var contactFormStatus = document.getElementById("contact-form-status");
   var alert = `<div class="alert alert-${type} d-flex align-items-center" role="alert">
-                     <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Success:">
-                        <use xlink:href="#check-circle-fill" />
-                    </svg>
-                    <div>${message}</div>
+                    <div class="flex-grow-1">${message}</div>
                     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                 </div>`;
   contactFormStatus.innerHTML = alert;
