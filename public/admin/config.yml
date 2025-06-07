@@ -1,0 +1,40 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "about"
+    label: "About Me"
+    files:
+      - file: "content/about.md"
+        label: "About Page"
+        name: "about"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Short Description", name: "description", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Thumbnail", name: "image", widget: "image" }
+      - { label: "Featured", name: "featured", widget: "boolean", required: false }
+
+  - name: "contact"
+    label: "Contact Section"
+    files:
+      - file: "content/contact.md"
+        label: "Contact Info"
+        name: "contact"
+        fields:
+          - { label: "Heading", name: "title", widget: "string" }
+          - { label: "Intro Text", name: "body", widget: "text", required: false }
