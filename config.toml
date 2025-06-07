@@ -31,4 +31,5 @@ theme = "hello-friend-ng"
 
 [params]
   customCSS = ["css/custom.css"]
+  customJS  = ["js/contact.js"]
 
