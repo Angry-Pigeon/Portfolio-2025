@@ -1,0 +1,10 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "build:css": "node-sass --output-style compressed -r static/scss -o static/css"
+  },
+  "devDependencies": {
+    "node-sass": "4.14.1"
+  }
+}
