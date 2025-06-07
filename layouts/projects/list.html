@@ -1,9 +1,15 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  <ul>
+  {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+  <ul class="project-grid">
     {{ range .Pages }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      <li class="project-card">
+        <a href="{{ .RelPermalink }}">
+          <h2>{{ .Title }}</h2>
+          <img src="{{ .Params.image }}" alt="{{ .Title }} thumbnail">
+          <p>{{ .Params.description }}</p>
+        </a>
+      </li>
     {{ end }}
   </ul>
 {{ end }}
