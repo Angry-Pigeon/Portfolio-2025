@@ -33,7 +33,8 @@
   max-width: 600px;
   margin: 2rem auto;
   padding: 2rem;
-  background: var(--background-secondary, #f9f9f9);
+  background: var(--background-secondary-dark, #3b3d42);
+  border: 1px solid #4e4e57;
   border-radius: 8px;
 }
 
