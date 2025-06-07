@@ -1,7 +1,7 @@
 <!-- layouts/partials/footer.html -->
 <section id="contact" class="site-contact">
-  <h2>{{ with (site.GetPage "page" "contact").Title }}{{ . }}{{ end }}</h2>
-  {{ with (site.GetPage "page" "contact").Content }}
+  <h2>{{ with (site.GetPage "contact").Title }}{{ . }}{{ end }}</h2>
+  {{ with (site.GetPage "contact").Content }}
     <div class="contact-intro">{{ . }}</div>
   {{ end }}
 
