@@ -16,6 +16,16 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
 
+  - name: "myself"
+    label: "About Myself"
+    files:
+      - file: "content/myself.md"
+        label: "Myself Page"
+        name: "myself"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
   - name: "projects"
     label: "Projects"
     folder: "content/projects"
