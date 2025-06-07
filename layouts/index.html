@@ -1,7 +1,7 @@
 {{ define "main" }}
   <section class="projects-overview">
     <h1>Featured Projects</h1>
-    <ul class="project-list">
+    <ul class="project-grid">
       {{/* Grab up to 6 featured projects */}}
       {{ $all := where .Site.RegularPages "Section" "projects" }}
       {{ $featured := where $all "Params.featured" true | first 6 }}
@@ -19,7 +19,7 @@
     {{/* Optional: load more hidden items */}}
     {{ $others := where $all "Params.featured" false }}
     {{ if gt (len $others) 0 }}
-      <ul class="project-list more-projects" style="display:none">
+      <ul class="project-grid more-projects" style="display:none">
         {{ range $others }}
           <li class="project-card">
             <a href="{{ .RelPermalink }}">
@@ -33,7 +33,7 @@
       <button id="showMoreBtn">Show more</button>
       <script>
         document.getElementById('showMoreBtn').onclick = () => {
-          document.querySelector('.more-projects').style.display = 'flex';
+          document.querySelector('.more-projects').style.display = 'grid';
           document.getElementById('showMoreBtn').style.display = 'none';
         };
       </script>
