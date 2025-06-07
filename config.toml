@@ -17,7 +17,7 @@ theme = "hello-friend-ng"
   [[menu.main]]
     identifier = "projects"
     name       = "Projects"
-    url        = "/p"
+    url        = "/"
     weight     = 20
 
   [[menu.main]]
